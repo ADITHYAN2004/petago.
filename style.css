@@ -173,47 +173,49 @@ body{
 .section1 {
   align-items: center;
  margin-top: 50px;
- 
+ justify-content: center;
  
 }
+.faci_head{
+  margin-top: 20px;
+  margin-bottom: -18px;
 
+}
+.faci_head h1{
+  border-bottom:2px solid grey ;
+}
 .cards_e {
 
-  width: 80px;
-  height: 80px;
-  box-shadow: rgba(0, 0, 0, 0) 0px 25px 50px -12px;
-
-
+  width: 150px;
+  height: 170px;
+  box-shadow: rgba(14, 14, 14, 0.069) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   border-radius: 20px;
   
 
 }
-.section1 .one{
-  background-color: #afd1fa;
-} 
-.section1 .two{
-  background-color: #f9d1ff;
-} 
-.section1 .three{
-  background-color: hsl(160, 87%, 81%);
-} 
-.section1 .four{
-  background-color: #91c3ff;
-} 
-.section1 .five{
-  background-color: #91c3ff;
-} 
+
 .cards_e:hover{
   box-shadow: rgba(14, 14, 14, 0.069) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
+} /*facility img*/
+
 .faci{
-  width: 50px;
-  height: 50px;
+  position: absolute;
+  width: 150px;
+  height: 160px;
+  margin-top: 20px;
   
 
 }
-.card_e .one{
-  background-color: #4a98f7;
+.cards_e div{
+  background-color: #54daff;
+ 
+  width: 150px;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;  
 }
 /* selland transport */
 .transport_sell_help .transport {
@@ -231,28 +233,36 @@ body{
 
 .transport .btn{
   border:1px solid rgb(4, 4, 4);
+  background-color: #02083e;
   border-radius: 10px;
-  width: 140px;
+  width: 125px;
   height: 35px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .sell .btn{
   border:1px solid rgb(4, 4, 4);
+  background-color: #02083e;
   border-radius: 10px;
-  width: 140px;
+  width: 125px;
   height: 35px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .help .btn{
   border:1px solid rgb(4, 4, 4);
+  background-color: #02083e;
   border-radius: 10px;
-  width: 140px;
+  width: 125px;
   height: 35px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 /*section 2 recomendation*/
 /* arrows */
 .section2{
+ padding: 20px;
+ background-color: #02083e;
+ color: #f0faff;
+}
+.section2_recom{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,15 +271,15 @@ body{
   
 }
 #front_btn{
-  margin-left:20px ;
+  margin-left:10px ;
   width: 40px;
 }
 #back_btn{
-  margin-right: 20px;
+  margin-right: 10px;
   width: 40px;
 }
 .recom_img{
-  width: 90%;
+  
   display: flex;
   overflow-x:scroll ;
   
@@ -282,7 +292,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap :20px;
+  gap :5px;
  
   animation: slideAnimation 12s initial;
 }
@@ -291,14 +301,7 @@ body{
   height: 250px;
 }
 
-.section2_head{
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  color: #767676;
-}
+
 /*section 3 selling*/
 .btn_s3{
   display: flex;
@@ -453,7 +456,7 @@ color: #f0faff;
 @media screen and (max-width: 468px) {
   .landing_page {
     margin-top: 40px;
-    height: 24vh;
+    height: 20vh;
     background-color: #ffffff;
     
   }
@@ -466,38 +469,95 @@ color: #f0faff;
     border-left: 1px solid rgba(0, 0, 0, 0.643);
   }
   .transport_sell_help img{
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 5px;
   }
   .transport_sell_help h1{
-    font-weight: 400;
-    font-size: 0.5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
   }
   
   .transport .btn{
     border:1px solid rgb(4, 4, 4);
+    background-color: #02083e;
     border-radius: 4px;
     width: 50px;
-    height: 15px;
-    color: rgb(0, 0, 0);
+    height: 20px;
+    color: rgb(255, 255, 255);
     font-size: 0.5rem;
   }
   .sell .btn{
     border:1px solid rgb(4, 4, 4);
+    background-color: #02083e;
     border-radius: 4px;
     width: 50px;
-    height: 15px;
-    color: rgb(0, 0, 0);
+    height: 20px;
+    color: rgb(255, 255, 255);
     font-size: 0.5rem;
   }
   .help .btn{
     border:1px solid rgb(4, 4, 4);
+    background-color: #02083e;
     border-radius: 4px;
     width: 50px;
-    height: 15px;
-    color: rgb(0, 0, 0);
+    height: 20px;
+    color: rgb(255, 255, 255);
     font-size: 0.5rem;
+  }
+  .recom_img div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap :5px;
+   
+    animation: slideAnimation 12s initial;
+  }
+  .recom_img div img{
+    max-width: 80px;
+    height: 80px;
+  }
+  .faci_head{
+    margin-top: 13px;
+    margin-bottom: -22px;
+    font-size: 1rem;
+  }
+  .faci_head h1{
+    border-bottom:2px solid grey ;
+  }
+  .cards_e {
+  
+    width: 80px;
+    height: 80px;
+    box-shadow: rgba(14, 14, 14, 0.069) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+    
+  
+  }
+  
+  .cards_e:hover{
+    box-shadow: rgba(14, 14, 14, 0.069) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  } /*facility img*/
+  
+  .faci{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    margin-top: 20px;
+    
+  
+  }
+  .cards_e div{
+    background-color: #54daff;
+   
+    width: 80px;
+    height: 40px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;  
   }
 }
 
