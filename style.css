@@ -127,10 +127,11 @@ body{
 }
 
 .slides-container img {
-  object-fit: contain;
+  object-fit: fill;
+  margin-left: 5px;
   width: 100%;
-  animation: slideAnimation 8s infinite;
-  transition: transform 2s ease-in-out;
+  animation: slideAnimation 12s infinite;
+  transition: transform 2s ease-out;
 }
 /* animation for the banner container */
  @keyframes slideAnimation {
@@ -139,7 +140,7 @@ body{
   }
  
 
-  100% {
+  80% {
     transform: translateX(-100%);
   }
 } 

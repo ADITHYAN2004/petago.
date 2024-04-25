@@ -2570,11 +2570,12 @@ body{
 }
 
 .slides-container img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-left: 5px;
   width: 100%;
-  animation: slideAnimation 8s infinite;
-  transition: transform 2s ease-in-out;
+  animation: slideAnimation 12s infinite;
+  transition: transform 2s ease-out;
 }
 
 /* animation for the banner container */
@@ -2584,7 +2585,7 @@ body{
     transform: translateX(0%);
   }
 
-  100% {
+  80% {
     transform: translateX(-100%);
   }
 }
