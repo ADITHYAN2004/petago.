@@ -1372,6 +1372,10 @@ video {
   row-gap: 0.75rem;
 }
 
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1815,6 +1819,11 @@ video {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200 {
@@ -2670,8 +2679,8 @@ body{
 }
 
 .cards_e {
-  width: 150px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 15px;
   background-color: #f5eee5;
@@ -2686,8 +2695,8 @@ body{
 /*facility img*/
 
 .cards_e h1{
-  font-weight: 700;
-  font-size: 1.3rem;
+  font-weight: 500;
+  font-size: 1rem;
   color: rgb(106, 106, 106);
   text-align: center;
   margin-top: -5px;
@@ -2696,7 +2705,7 @@ body{
 .faci{
   width: 100px;
   height: 100px;
-  margin: 20px 20px 2px 20px ;
+  margin: 0px 20px 5px 16px ;
 }
 
 /*section 2 recomendation*/
@@ -2748,14 +2757,6 @@ body{
 }
 
 .btn_section3 {
-  position: absolute;
-  /* Change to fixed positioning */
-  top: 50%;
-  /* Position it 50% from the top of the viewport */
-  left: 50%;
-  /* Position it 50% from the left of the viewport */
-  transform: translate(-50%, -50%);
-  /* Center the button */
   width: 120px;
   height: 50px;
   font-size: 1.5rem;
@@ -2764,22 +2765,22 @@ body{
               linear-gradient(to right, darkblue, darkorchid) border-box;
   border-radius: 50em;
   border: 4px solid transparent;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.123) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .cards_sell{
-  width: 300px;
+  max-width: 300px;
+  max-height: 340px;
   border-top: 2px solid rgb(230, 230, 10);
   gap:10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  box-shadow: rgba(0, 0, 0, 0.106) 0px 25px 50px -12px;
 }
 
 .card_petsimg{
-  margin: 10px;
+  margin: 20px;
   margin-bottom: 30px;
 }
 
@@ -2808,6 +2809,11 @@ body{
 
   .nav .search-box {
     right: 150px;
+  }
+
+  .cards_sell{
+    max-width: 260px;
+    max-height: 290px;
   }
 }
 
@@ -3023,10 +3029,10 @@ body{
 
 /* loing.css */
 
-.signin,
-.signup
+.signin_main,.signup_main
  {
-  position: absolute;
+  height: 100vh;
+  align-items: center;
 }
 
 .login-card{
@@ -3201,6 +3207,282 @@ body{
     width: 300px;
     padding: 2rem;
   }
+}
+
+/* services css  */
+
+/* Import Google font - Poppins */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Google Fonts - Poppins */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hd {
+  background: #f0faff;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2{
+  flex-basis: 30%;
+  min-width: 100px;
+}
+
+.col-2 img{
+  width: 100%;
+  padding: 50px 0;
+}
+
+.frm {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: radial-gradient(#d8e0f1,#ecf0f8);
+  margin-top: 60px;
+}
+
+.pickup{
+  margin-top: 60px;
+  display: none;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #ffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 30px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+.form .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .gender {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #707070;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #4a98f7;
+}
+
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+
+  .col-2 img{
+    display: none;
+  }
+
+  .col-2{
+    display: none;
+  }
+
+  .destination{
+    margin-top: 50px;
+  }
+
+  .pickup{
+    margin-top: 60px;
+  }
+
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+.footer{
+  background: #292929;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer p{
+  color:#8a8a8a;
+}
+
+.footer h3{
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1{
+  flex-basis: 30%;
+}
+
+.footer-col-2{
+  flex:1;
+  text-align: center;
+}
+
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,.footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.app-logo{
+  margin-top: 20px;
+}
+
+.app-logo img{
+  width: 140px;
+}
+
+.container hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.menu-icon{
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+.contain hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
